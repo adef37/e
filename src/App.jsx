@@ -9,8 +9,18 @@ const messages = [
   "Give it another thought! ✨",
   "Don't do this to me! 💝",
   "Maybe click the other button? 🎀",
+  "I'll be very sad! 🎭",
+  "Come on, say yes! 🌈",
+  "Pretty please? 🦋",
+  "I'll wait forever! ⏳",
+  "Just one yes! 🎶",
+  "Make my day special! 🌺",
+  "My heart beats for you! 💓",
+  "Together forever? 🔐",
+  "You're my everything! 🌙",
+  "Let's write our story! 📖",
   "Last few chances! 💖",
-  "Final chance to say yes! 🌟"
+  "Final chance to say yes! 🌟",
 ];
 
 function App() {
@@ -20,7 +30,7 @@ function App() {
   const [yesScale, setYesScale] = useState(1);
 
   const handleNoClick = () => {
-    if (noCount < 10) {
+    if (noCount < 20) {
       const newX = Math.random() * (window.innerWidth - 100);
       const newY = Math.random() * (window.innerHeight - 50);
       setNoButtonStyle({ position: 'absolute', left: `${newX}px`, top: `${newY}px` });
