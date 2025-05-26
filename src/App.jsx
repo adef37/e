@@ -10,7 +10,7 @@ const messages = [
   "Don't do this to me! 💝",
   "Maybe click the other button? 🎀",
   "I'll be very sad! 🎭",
-  "Come on, say yes! 🌈",
+  "Come on, say yes! 💞",
   "Pretty please? 🦋",
   "I'll wait forever! ⏳",
   "Just one yes! 🎶",
@@ -36,7 +36,6 @@ function App() {
       setNoButtonStyle({ position: 'absolute', left: `${newX}px`, top: `${newY}px` });
       alert(messages[noCount]);
       setNoCount(prev => prev + 1);
-      setYesScale(prev => Math.min(prev + 0.3, 4));
     } else {
       alert("Blee, I refuse your refusal! 😤💝");
       const newX = Math.random() * (window.innerWidth - 100);
