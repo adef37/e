@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff5f7 0%, #fdf2f8 100%);
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, #db2777, #be185d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: titleFloat 3s ease-in-out infinite;
+}
+
+@keyframes titleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(8px);
+}
+
+button:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-2px) !important;
+}
+
+.bg-pink-50 {
+  background: linear-gradient(135deg, #fff5f7 0%, #fdf2f8 100%);
+}
+
+.bg-pink-100 {
+  background: linear-gradient(135deg, #fcf4ff 0%, #fdf2f8 100%);
+}
+
+.bg-pink-500 {
+  background: linear-gradient(45deg, #ec4899, #db2777) !important;
+}
+
+.animate-bounce {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+}
+
+
+.success-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.success-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 10%, transparent 20%),
+              radial-gradient(circle, rgba(255,255,255,0.8) 10%, transparent 20%);
+  background-position: 0 0, 50px 50px;
+  background-size: 100px 100px;
+  animation: sparkle 8s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes sparkle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.no-button {
+  background: linear-gradient(45deg, #9ca3af, #6b7280) !important;
+  opacity: 0.9;
+}
+
+
+.yes-button::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 9999px;
+  background: linear-gradient(45deg, #ec4899, #db2777);
+  z-index: -1;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  opacity: 0.5;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(1.1);
+  }
+}
