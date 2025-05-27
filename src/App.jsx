@@ -66,7 +66,7 @@ function App() {
     <div className="h-screen bg-pink-50 flex flex-col items-center justify-center p-4">
       <div className="text-center space-y-12">
         <h1 className="text-6xl font-bold text-pink-600 mb-8">
-           is it unrequited (from my pov)?
+           ...
         </h1>
         <div className="flex flex-wrap justify-center gap-8 relative">
           <button
