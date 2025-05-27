@@ -1,26 +1,26 @@
 import { useState } from 'react';
 
 const messages = [
-  "Are you sure? 🥺",
-  "Really really sure? 💔",
-  "Think again! 🙏",
-  "You're breaking my heart! 😭",
-  "Please reconsider! 🌹",
-  "Give it another thought! ✨",
-  "Don't do this to me! 💝",
-  "Maybe click the other button? 🎀",
-  "I'll be very sad! 🎭",
-  "Come on, say yes! 💞",
-  "Pretty please? 🦋",
-  "I'll wait forever! ⏳",
-  "Just one yes! 🎶",
-  "Make my day special! 🌺",
-  "My heart beats for you! 💓",
-  "Together forever? 🔐",
-  "You're my everything! 🌙",
-  "Let's write our story! 📖",
-  "Last few chances! 💖",
-  "Final chance to say yes! 🌟",
+  "Are you sure? ",
+  "Really really sure? ",
+  "Think again! ",
+  "You're breaking my heart! ",
+  "Please reconsider! ",
+  "Give it another thought! ",
+  "Don't do this to me! ",
+  "Maybe click the other button? ",
+  "I'll be very sad! ",
+  "Come on, say yes! ",
+  "Pretty please? ",
+  "I'll wait forever! ",
+  "Just one yes! ",
+  "Make my day special! ",
+  "My heart beats for you! ",
+  "Together forever? ",
+  "You're my everything! ",
+  "Let's write our story! ",
+  "Last few chances! ",
+  "Final chance to say yes! ",
 ];
 
 function App() {
@@ -66,7 +66,7 @@ function App() {
     <div className="h-screen bg-pink-50 flex flex-col items-center justify-center p-4">
       <div className="text-center space-y-12">
         <h1 className="text-6xl font-bold text-pink-600 mb-8">
-          Lea, will you marry me? 💍
+           is it unrequited (from my pov)?
         </h1>
         <div className="flex flex-wrap justify-center gap-8 relative">
           <button
